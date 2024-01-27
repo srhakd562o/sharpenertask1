@@ -1,0 +1,33 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    color: #007bff;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+#listOfItems {
+    list-style: none;
+    padding: 0;
+}
+
+#listOfItems li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+}

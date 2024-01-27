@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Expense Tracker</h1>
+        <form onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+                <label for="expenseAmount">Choose expense amount:</label>
+                <input type="number" class="form-control" id="expenseAmount" required>
+            </div>
+            <div class="form-group">
+                <label for="expenseDescription">Choose description:</label>
+                <input type="text" class="form-control" id="expenseDescription" required>
+            </div>
+            <div class="form-group">
+                <label for="expenseCategory">Choose a Category:</label>
+                <select class="form-control" id="expenseCategory" required>
+                    <option value="fuel">Fuel</option>
+                    <option value="food">Food</option>
+                    <option value="electricity">Electricity</option>
+                    <option value="movie">Movie</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success">Add Expense</button>
+        </form>
+        <ul id="listOfItems"></ul>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Your custom JavaScript -->
+    <script src="app3.js"></script>
+</body>
+</html>
